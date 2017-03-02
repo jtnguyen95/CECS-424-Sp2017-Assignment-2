@@ -35,4 +35,7 @@ def sum_primes(num):
         x = next(generator) #next prime
         print(sum) #prints sum each iteration
 
-sum_primes(1)
+start = time.time()
+sum = sum_primes(1)
+end = time.time() - start
+print("Solution was found in %s seconds" % (end))
